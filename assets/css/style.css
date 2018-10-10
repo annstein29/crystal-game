@@ -1,0 +1,92 @@
+body {
+    background-image: url("../images/background.jpeg");
+    height: 100%;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    color: #ffffff;
+}
+
+#gemcard{
+    background-color: peachpuff;
+    color: #000;
+    font-weight: 600;
+}
+
+#gemBlock {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.gems {
+    position: relative;
+    margin: 5px;
+    
+}
+
+.gems img {
+    height: 100px;
+    width: 100px;
+}
+
+.gems div {
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: 80px;
+    background-color: plum;
+}
+
+#scoreBoard {
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+}
+
+#gameNumberBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#userScoreBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+#userScore {
+    text-align: center;
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    background-color: peachpuff;
+    color: #000;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 400px) {
+    .gems img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .gems div {
+        width: 70px;
+        top: 50px;
+    }
+}

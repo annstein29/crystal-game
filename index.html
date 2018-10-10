@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <title>Crystal Collectors!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <nav class="navbar navbar-dark bg-dark">
+                    <h1>Crystal Collectors!</h1>
+                </nav>
+                <br>
+                <div class="jumbotron bg-dark">
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                        to your
+                        total score.</p>
+                    <p>You win the game by matching your total score to the random number shown, you lose the game if
+                        your total score
+                        goes above the shown number.</p>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card" id="scores">
+                    <div class="card-body">
+                        <div>
+                            <div id="gameNumberBox">
+                                <h1 id="gameNumber">0</h1>
+                            </div>
+                            <div id="scoreBoard">
+                                <h3 id="wins">Wins: 0</h3>
+                                <h3 id="losses">Losses: 0</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card" id="gemcard">
+                    <div class="card-body">
+                        <div id="gemBlock">
+                            <div class="gems" id="gem1" value="">
+                                <img src="assets/images/bluegem.png" alt="blueGem">
+                                <div id="gem1Value"></div>
+                            </div>
+                            <div class="gems" id="gem2" value="">
+                                <img src="assets/images/greengem.png" alt="greenGem">
+                                <div id="gem2Value"></div>
+                            </div>
+                            <div class="gems" id="gem3" value="">
+                                <img src="assets/images/purplegem.png" alt="purpleGem">
+                                <div id="gem3Value"></div>
+                            </div>
+                            <div class="gems" id="gem4" value="">
+                                <img src="assets/images/redgem.png" alt="redGem">
+                                <div id="gem4Value"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><br>
+        <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <div id="userScoreBox">
+                            <div id="userScore">
+                                <h3>Your total score is: </h3>
+                                <h1 id="userNumber">0</h1>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    </div>
+</body>
+
+</html>
