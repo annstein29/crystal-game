@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     $("#gem1").on("click", function() {
         $(this).attr('value', gem1);
-        $("#gem1Value").text(gem1);
+        $("#gem1Value");
         currentNumber = currentNumber + parseInt($("#gem1").val());
         $("#userNumber").text(currentNumber);
         gamePlay();
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     $("#gem2").on("click", function() {
         $(this).attr('value', gem2);
-        $("#gem2Value").text(gem2);
+        $("#gem2Value");
         currentNumber = currentNumber + parseInt($("#gem2").val());
         $("#userNumber").text(currentNumber);
         gamePlay();
@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     $("#gem3").on("click", function() {
         $(this).attr('value', gem3);
-        $("#gem3Value").text(gem3);
+        $("#gem3Value");
         currentNumber = currentNumber + parseInt($("#gem3").val());
         $("#userNumber").text(currentNumber);
         gamePlay();
@@ -41,7 +41,7 @@ $(document).ready(function () {
 
     $("#gem4").on("click", function() {
         $(this).attr('value', gem4);
-        $("#gem4Value").text(gem4);
+        $("#gem4Value");
         currentNumber = currentNumber + parseInt($("#gem4").val());
         $("#userNumber").text(currentNumber);
         gamePlay();
